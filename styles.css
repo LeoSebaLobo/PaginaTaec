@@ -1,0 +1,123 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.contenido {
+    background-color: yellow;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: black;
+    color: yellow;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    margin-left: 10px;
+    height: 50px; /* Ajusta la altura del logo según tus necesidades */
+}
+.titulo {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    vertical-align: middle;
+    /* margin-right: 300 px;*/
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el espacio entre el header y los botones */
+}
+
+.boton-subpagina {
+    display: inline-block;
+    margin: 0 75px; /* Ajusta el espacio entre los botones */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-subpagina img {
+    display: block;
+    width: 100px; /* Ajusta el tamaño de la imagen del botón */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.separator {
+    height: 15px;
+    background-color: black;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.card-columns {
+    column-count: 2;
+    column-gap: 1rem;
+    
+}
+
+.card {
+    width: 100%;
+}
+
+/* Media query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 767px) {
+    .card-columns.center-cards {
+      column-count: 1; /* Una tarjeta por columna en dispositivos móviles */
+    }
+  }
+
+  .mas-info {
+    text-decoration: none;
+    background-color: brown;
+    color: yellow;
+}
