@@ -356,12 +356,13 @@ footer {
     background-color: dark;
 }
 
-.cardf {
-    max-width: 200px; /* Cambia el valor según lo desees */
+/* Ajusta el tamaño de las imágenes y las tarjetas */
+.card {
+    max-width: 350px; /* Cambia el valor según lo desees */
     margin: 0 auto;
 }
 
-.card-img-topf {
+.card-img-top {
     max-width: 100%;
     height: auto;
 }
