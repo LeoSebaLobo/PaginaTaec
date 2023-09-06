@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 header {
@@ -131,6 +132,7 @@ footer {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+    margin-bottom: 75px;
 }
 
 .whatsapp-button img {
@@ -422,7 +424,7 @@ footer {
 /* Estilos para el encabezado */
 header {
     background-color: black;
-    color: yellow;
+    color: white;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -489,9 +491,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
+
 
 /* Estilos para el formulario */
 .formulario {
@@ -535,4 +535,32 @@ button:hover {
 
 .formulario button:hover {
     background-color: #45a049;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que ocupe todo el espacio vertical disponible */
+  }
+
+  .card-text a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    background-color: #007bff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 20px; /* Añade un espacio alrededor del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el color de fondo */
+  }
+
+  .card-text a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+  }
+
+  .titulo-principal {
+    text-align: center; /* Centra horizontalmente */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    margin-top: 20px; /* Añade un margen superior para separarlo de los elementos anteriores */
+    font-size: 56px;
 }
