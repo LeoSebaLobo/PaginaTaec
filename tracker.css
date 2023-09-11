@@ -1,0 +1,613 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.contenido {
+    background-color: yellow;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: black;
+    color: yellow;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    margin-left: 10px;
+    height: 50px;
+    /* Ajusta la altura del logo según tus necesidades */
+}
+
+.titulo {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    vertical-align: middle;
+    /* margin-right: 300 px;*/
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Ajusta el espacio entre el header y los botones */
+}
+
+.boton-subpagina {
+    display: inline-block;
+    margin: 0 75px;
+    /* Ajusta el espacio entre los botones */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-subpagina img {
+    display: block;
+    width: 100px;
+    /* Ajusta el tamaño de la imagen del botón */
+    height: auto;
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.separator {
+    height: 15px;
+    background-color: black;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.card-columns {
+    column-count: 2;
+    column-gap: 1rem;
+
+}
+
+.card {
+    width: 100%;
+}
+
+/* Media query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 767px) {
+    .card-columns.center-cards {
+        column-count: 1;
+        /* Una tarjeta por columna en dispositivos móviles */
+    }
+}
+
+.mas-info {
+    text-decoration: none;
+    background-color: brown;
+    color: yellow;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    margin-bottom: 75px;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tituloPlanes {
+    text-align: center;
+
+    margin-top: 25px;
+    margin-bottom: 80px;
+    background-color: black;
+    color: yellow;
+    height: 45px;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.imagen-header {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 80px);
+    /* Resta el alto del encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-header img {
+    width: 100%;
+    height: auto;
+}
+
+.contenido-dividido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border-top: 1px solid #ccc;
+    /* Línea gris */
+}
+
+.contenido-izquierdo,
+.contenido-derecho {
+    width: 48%;
+    /* Divide a la mitad */
+    text-align: center;
+}
+
+.titulo-destacado {
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #888;
+    font-size: 0.8em;
+}
+
+.boton-solicitar,
+.boton-suscribirse {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: underline;
+    margin-top: 0.2em;
+}
+
+.boton-solicitar {
+    color: #fff;
+    background-color: #000;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.boton-suscribirse {
+    color: #fff;
+    background-color: #000;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
+
+.boton-suscribirse:hover {
+    background-color: #333;
+}
+
+.apartado-cuotas {
+    background-color: #f0f0f0;
+    /* Fondo gris claro */
+    color: #000;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.contenido-cuotas {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo-centrado {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.cuotas-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.linea-punteada {
+    flex-grow: 1;
+    border-top: 1px dashed #000;
+    margin: auto;
+    /* Alineación al centro vertical */
+}
+
+.monto-cuota {
+    font-weight: bold;
+}
+
+.logo-button {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+}
+
+.logo-button img {
+    height: 50px;
+    /* Ajusta la altura del logo según tus necesidades */
+}
+
+.imagenes-contenedor {
+    background-color: #f0f0f0;
+    /* Fondo gris claro */
+    color: #000;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.imagen-info {
+    margin-bottom: 2em;
+}
+
+.titulo-imagen {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.texto-fondo {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out;
+    /* Transición suave de opacidad */
+}
+
+.imagen-info:hover .texto-fondo {
+    opacity: 1;
+    /* Mostrar el fondo al pasar el ratón */
+}
+
+.imagen-info {
+    position: relative;
+    /* Asegurar que el contenedor de imagen tenga posición relativa */
+    display: inline-block;
+    /* Ajustar alineación horizontal de las imágenes */
+    
+}
+
+.imagen-info img {
+    max-width: 100%;
+    height: auto;
+    /* Mantener la proporción de aspecto original */
+}
+
+@media (max-width: 767px) {
+    .card-columns.center-cards {
+        column-count: 1;
+    }
+}
+
+/* Estilos para los botones en las tarjetas */
+.boton-solicitar,
+.boton-financiacion {
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton-solicitar {
+    background-color: blue;
+}
+
+.boton-financiacion {
+    background-color: red;
+}
+
+.boton-solicitar:hover,
+.boton-financiacion:hover {
+    background-color: dark;
+}
+
+.cardf {
+    max-width: 200px; /* Cambia el valor según lo desees */
+    margin: 0 auto;
+}
+
+.card-img-topf {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Restaura la alineación horizontal de las tarjetas en dispositivos móviles */
+@media (max-width: 767px) {
+    .card-columns.center-cards {
+        column-count: 1;
+    }
+}
+
+.contenido-dividido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border-top: 1px solid #ccc;
+}
+
+.contenido-izquierdo {
+    width: 50%; /* Ocupa la mitad del espacio */
+    text-align: center;
+}
+
+.contenido-izquierdo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenido-derecho {
+    width: 50%; /* Ocupa la otra mitad del espacio */
+}
+
+.titulo-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Estilos para los títulos */
+.titulo-destacado {
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitulo,
+.subtitulo-negro {
+    margin: 0;
+    color: #888;
+    font-size: 0.8em;
+}
+
+.titulo-logo {
+    margin: 0; /* Elimina el margen superior e inferior */
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    margin-left: 10px; /* Añade un margen izquierdo para separarlo del logo */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el logo y el título del logo */
+.logo-button {
+    margin-right: 10px;
+}
+
+.titulo-logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Alinea el número de teléfono a la izquierda del menú desplegable */
+.telefono {
+    font-size: 1rem;
+    color: white;
+    margin-right: 3px; /* Ajusta el margen derecho */
+    margin-left: 3px; /* Agrega margen izquierdo para separarlo del menú */
+}
+
+.telefono-text {
+    color: white;
+}
+
+.botones-container {
+    margin-top: 1.5em; /* Ajusta el espaciado entre los botones */
+}
+
+.boton-suscribirse,
+.boton-mas-info {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 10px; /* Ajusta el espaciado horizontal entre los botones */
+}
+
+.boton-mas-info {
+    margin-left: 10px; /* Ajusta el espaciado horizontal entre los botones */
+}
+
+.boton-suscribirse:hover,
+.boton-mas-info:hover {
+    background-color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%; /* Ocupa el ancho del formulario */
+    margin-top: 20px; /* Espacio hacia abajo */
+    padding: 10px 0; /* Espaciado vertical interno */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para el formulario */
+.formulario {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 2em;
+    border-radius: 5px;
+}
+
+/* Estilos para los campos del formulario */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el campo de texto grande */
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón del formulario */
+.formulario button {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que ocupe todo el espacio vertical disponible */
+  }
+
+  .card-text a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    background-color: #007bff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 20px; /* Añade un espacio alrededor del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el color de fondo */
+  }
+
+  .card-text a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+  }
+
+  .titulo-principal {
+    text-align: center; /* Centra horizontalmente */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    margin-top: 20px; /* Añade un margen superior para separarlo de los elementos anteriores */
+    font-size: 56px;
+}
+
+.ban {
+    border: 5px solid black;
+}
+
+.content {
+    /* Agrega espacio para que el footer no se solape con el contenido */
+    padding-bottom: 80px; /* Ajusta según la altura de tu footer */
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+.icon-link:hover {
+    color: #00bcd4;
+}
+
+.img2{
+    height: 25px;
+    width: 25px;
+}

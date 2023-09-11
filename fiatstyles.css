@@ -466,3 +466,46 @@ header {
     margin: 0;
 }
 
+.content {
+    /* Agrega espacio para que el footer no se solape con el contenido */
+    padding-bottom: 80px; /* Ajusta según la altura de tu footer */
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+.icon-link:hover {
+    color: #00bcd4;
+}
+
+.img2{
+    height: 25px;
+    width: 25px;
+}
+

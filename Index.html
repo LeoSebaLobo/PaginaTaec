@@ -32,9 +32,9 @@
             </button>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="fiat.html">Fiat</a>
-                <a class="dropdown-item" href="subpagina2.html">Peugeot</a>
-                <a class="dropdown-item" href="subpagina3.html">Citroen</a>
-                <a class="dropdown-item" href="subpagina4.html">Chevrolet</a>
+                <a class="dropdown-item" href="peugeot.html">Peugeot</a>
+                <a class="dropdown-item" href="citroen.html">Citroen</a>
+                <a class="dropdown-item" href="chevrolet.html">Chevrolet</a>
             </div>
         </div>
     </header>
@@ -53,17 +53,17 @@
                     </a>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
-                    <a href="subpagina2.html" class="boton-subpagina">
+                    <a href="peugeot.html" class="boton-subpagina">
                         <img src="assets/peugeot1.png" alt="Imagen 2">
                     </a>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
-                    <a href="subpagina3.html" class="boton-subpagina">
+                    <a href="chevrolet.html" class="boton-subpagina">
                         <img src="assets/chevrolet1.png" alt="Imagen 3">
                     </a>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
-                    <a href="subpagina4.html" class="boton-subpagina">
+                    <a href="citroen.html" class="boton-subpagina">
                         <img src="assets/citroen1.png" alt="Imagen 4">
                     </a>
                 </div>
@@ -121,14 +121,11 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="assets/dondefacebook.png" alt="...">
+                        <img src="assets/testimonios.png" alt="...">
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body">
-
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-
+                        <div class="card-body text-center"> <!-- Agregamos la clase text-center -->
+                            <p class="card-text"><a href="#" data-toggle="modal" data-target="#videoModal" class="btn btn-primary center-link">TESTIMONIO</a></p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +133,7 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="assets/porquecomprar.png" alt="...">
+                        <img src="assets/ADMIN.png" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -185,7 +182,7 @@
                 <img src="assets/plan208.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center"><b>208</b> <br> 120 cuotas - 100% financiado
-                        <br><br> <a class="mas-info" href="">Mas informacion del plan</a></p>
+                        <br><br> <a class="mas-info" href="208.html">Mas informacion del plan</a></p>
                     </p>
                 </div>
             </div>
@@ -194,7 +191,7 @@
                 <img src="assets/planc3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center"><b>C3</b> <br> 120 cuotas - 100% financiado <br><br>
-                        <a class="mas-info" href="">Mas informacion del plan</a></p>
+                        <a class="mas-info" href="c3.html">Mas informacion del plan</a></p>
                     </p>
                 </div>
             </div>
@@ -203,15 +200,36 @@
                 <img src="assets/plantracker.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="text-align: center"><b>Tracker</b> <br> 120 cuotas - 100% financiado
-                        <br><br> <a class="mas-info" href="">Mas informacion del plan</a></p>
+                        <br><br> <a class="mas-info" href="tracker.html">Mas informacion del plan</a></p>
                     </p>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">Video de Testimonio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí puedes agregar el reproductor de video -->
+          <video width="100%" height="315" src="assets/reel entrega Ricardo.mp4" controls frameborder="0" allowfullscreen></video>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <footer>
-        <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Powered by Leandro Lobo. Todos los derechos reservados.</p>
     </footer>
 
     <div class="whatsapp-button">

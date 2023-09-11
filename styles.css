@@ -564,3 +564,18 @@ button {
     margin-top: 20px; /* Añade un margen superior para separarlo de los elementos anteriores */
     font-size: 56px;
 }
+
+.center-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-title {
+    font-size: 24px; /* Tamaño de fuente deseado */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior para separar el título del contenido del modal */
+    justify-content: center;
+}
