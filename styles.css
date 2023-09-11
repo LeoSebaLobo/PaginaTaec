@@ -579,3 +579,7 @@ button {
     margin-bottom: 20px; /* Espacio inferior para separar el título del contenido del modal */
     justify-content: center;
 }
+
+.esconder {
+    display: none;
+}
